@@ -136,6 +136,26 @@ func greetToName(name: String, day: String)-> String {
 greetToName ("Bob", day: "Tuesday")
 
 
+///////////////////////////////////////
+
+let min = 10
+let max = 20
+let value = 15
+var range = (value, min, max)
+print(range.1)
+
+func greet(name: String, day: String)-> (String, String, String)  {
+    return (name, day, "Hello \(name), today is \(day).")
+}
+let lala = greet ("bob", day: "tuesday")
+lala.1
+print(lala)
+
+
+
+
+
+
 
 
 
