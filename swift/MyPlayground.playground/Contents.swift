@@ -126,9 +126,21 @@ var FFL = 0
 for i in 0..<4 {FFL += 1 }
 print(FFL)
 
-var SFL = 0
-for var i = 0; i < 4; ++1 {SFL += i }
-print(SFL)
+var sfl = 0
+for var i = 0; i < 4; ++i { sfl += i }
+print(sfl)
+
+func greetToName(name: String, day: String)-> String {
+    return "Hello \(name), today is \(day)."
+}
+greetToName ("Bob", day: "Tuesday")
+
+
+
+
+
+
+
 
 
 
