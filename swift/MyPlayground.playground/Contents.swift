@@ -152,10 +152,44 @@ lala.1
 print(lala)
 
 
+/////////////////////////////////
+func sumOf(numbers: Int...) -> Int {
+    var sum = 0
+    for number in numbers { sum += number }
+    return sum
+}
+sumOf()
+sumOf(42,597,12)
 
 
+func returnFifteen() -> Int {
+    var y = 10
+    func add() {y += 5}
+    add()
+    return y
+}
+returnFifteen()
 
+var numbers = [22, 33, 44]
+var v = numbers.map({
+    (number: Int) -> Int in
+    let result = 3 * number
+    return result
+})
+print (v)
 
+var tab = ["Julien", "Ophélie", "Vincent" ]
+var vp = tab.map({
+    (prenom: String) -> String in
+    return "Bonjour \(prenom)"
+})
+print (vp)
+
+var people = [(name: "Vincent", age: 32)]
+people.map({
+    (person: String, Int) -> Int in
+    return person.1
+})
 
 
 
