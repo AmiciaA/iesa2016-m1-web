@@ -101,7 +101,7 @@ var os3: String
 
 "OpS1 \(os1)"
 
-var vegeComment :String 
+var vegeComment :String
 let vege = "tomato"
 
 switch vege {
@@ -113,6 +113,22 @@ default:
 }
 
 print(vegeComment)
+
+var n = 2
+while n < 100 { n = n * 2 }
+print (n)
+
+var m = 2
+repeat { m = m * 2 } while m < 100
+print(m)
+
+var FFL = 0
+for i in 0..<4 {FFL += 1 }
+print(FFL)
+
+var SFL = 0
+for var i = 0; i < 4; ++1 {SFL += i }
+print(SFL)
 
 
 
