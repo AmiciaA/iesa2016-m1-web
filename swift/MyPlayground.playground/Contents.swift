@@ -62,3 +62,52 @@ var indScores = [12, 14, 15, 47, 45]
 for score2 in indScores {
     print(score + score)
 }
+
+//////////////////////////////////
+
+var indScores2 = [75, 43, 103, 87, 12]
+
+var teamScore2 = 0
+
+for score3 in indScores {
+    if score3 > 50 {
+        teamScore2 += 3
+    }
+    else
+    {
+        teamScore2 += 1
+    }
+}
+print(teamScore2)
+print(indScores2.count)
+
+/////////////////////////////////////
+var optionalString: String? = "Hello"
+print(optionalString == nil)
+
+var optionalName: String? = John Appleseed // nil
+var greeting = "Hello!"
+if let name = optionalName {
+    greeting = "Hello, \(name)"
+}
+
+
+var os1 : String? = "Hello"
+print(os1 == nil)
+var os2: String?
+print (os2 == nil)
+var os3: String
+print(os3 == nil)
+
+"OpS1 \(os1)"
+
+
+
+
+
+
+
+
+
+
+
