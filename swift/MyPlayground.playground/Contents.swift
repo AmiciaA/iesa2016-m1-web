@@ -44,3 +44,21 @@ let emptyDico = [String : Float]()
 var emptyArray2 = []
 //emptyArray2.append("Hello")
 //emptyArray2.append(33)
+
+///////////////////////////////////////
+
+let score = 42
+var teamScore = 0
+
+if score > 50 {
+    teamScore += 3
+}
+else
+{
+    teamScore += 1
+}
+
+var indScores = [12, 14, 15, 47, 45]
+for score2 in indScores {
+    print(score + score)
+}
