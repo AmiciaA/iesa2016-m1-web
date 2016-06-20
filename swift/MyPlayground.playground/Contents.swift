@@ -185,11 +185,36 @@ var vp = tab.map({
 })
 print (vp)
 
+/*
 var people = [(name: "Vincent", age: 32)]
 people.map({
     (person: String, Int) -> Int in
     return person.1
-})
+})*/
+//////////////////////////////////////////////////////
+
+class Shape {
+    var sidesCount = 0
+    func getInfo() -> String {
+        return "A shape with \(sidesCount) sides."
+    }
+}
+
+var shape = Shape()
+
+shape.sidesCount = 7
+var shapeDesc = shape.getInfo()
+
+class NamedShaped {
+    var sidesCount: Int = 0
+    var name: String
+    init(name: String) { self.name =  name }
+    func getInfo() -> String { return "\(sidesCount) sides"
+}
+
+
+var carre = NamedShaped(name: "drapeau")
+
 
 
 
