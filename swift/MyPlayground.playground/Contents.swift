@@ -276,7 +276,39 @@ class Counter {
 var counter = Counter()
 counter.incrementBy(2, times: 7)
 
+/////////////////////////////////////////////////
 
+enum Rank: Int {
+    case Ace = 1
+    case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
+    case Jack, Queen, King
+    func getInfo() -> String {
+        switch self {
+        case .Ace: return "Ace"
+        case .Jack: return "Jack"
+        case .Queen: return "Queen"
+        case .King: return "King"
+        default: return
+            String(self.rawValue)
+        }
+    }
+}
+
+let ace = Rank.Ace
+let aceRawValue = ace.rawValue
+
+
+
+struct Card {
+    var rank: Rank
+    var suit: Suit
+    func simpleDesc() ->String {
+        return "The \(rank.simpleDesc()) of \(suit.simpleDesc())"
+    }
+}
+
+let threeOfSpades = Card(rank: .Three, suit: . Spades)
+let threeOfSpadesDesc = threeOfSpades.simpleDesc()
 
 
 
