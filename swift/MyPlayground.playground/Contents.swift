@@ -205,7 +205,7 @@ var shape = Shape()
 shape.sidesCount = 7
 var shapeDesc = shape.getInfo()
 
-class NamedShaped {
+class NamedShape {
     var sidesCount: Int = 0
     var name: String
     init(name: String) { self.name =  name }
@@ -213,8 +213,29 @@ class NamedShaped {
 }
 
 
-var carre = NamedShaped(name: "drapeau")
+/*var carre = NamedShape(name: "drapeau")
+shape.sidesCount = 4
+var shapeDesc = shape.getInfo()*/
 
+class Square : NamedShape {
+    var sideLength: Double
+    init(length: Double, name: String) {
+    self.sideLength = length
+    super.init(name: name)
+    sidesCount = 4
+    }
+    
+        func area() -> Double {
+            return sideLength * sideLength
+        }
+        
+        override func getInfo()->String {
+            return "Square: L=\(sideLength)."
+        }
+}
+
+var eee = Square(length: 5.2, name: "myS")
+eee.area()
 
 
 
