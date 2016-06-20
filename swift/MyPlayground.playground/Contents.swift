@@ -263,6 +263,35 @@ class EquilateralTriangle: NamedShape {
 }
 
 
+///////////////////////////////////////////////////
+
+
+class Counter {
+    var count: Int = 0
+    func incrementBy(amount: Int, times: Int) {
+        count += amount * times
+}
+}
+
+var counter = Counter()
+counter.incrementBy(2, times: 7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
