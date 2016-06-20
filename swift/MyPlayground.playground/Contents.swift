@@ -211,7 +211,7 @@ class NamedShape {
     init(name: String) { self.name =  name }
     func getInfo() -> String { return "\(sidesCount) sides"
 }
-
+}
 
 /*var carre = NamedShape(name: "drapeau")
 shape.sidesCount = 4
@@ -236,6 +236,31 @@ class Square : NamedShape {
 
 var eee = Square(length: 5.2, name: "myS")
 eee.area()
+
+class Person {
+    var name: String = ""
+    func getName() -> String {return name}
+    func setName(newName: String) {name = newName}
+}
+
+
+class EquilateralTriangle: NamedShape {
+    var sideLength: Double = 0.0
+    init (length: Double, name: String) {
+        self.sideLength = length
+        super.init(name: name)
+        sidesCount = 3
+    }
+    var perimeter: Double {
+        get {
+            return 3.0 * sideLength
+        }
+        set {
+            sideLength = newValue / 3.0
+        }
+    }
+    
+}
 
 
 
