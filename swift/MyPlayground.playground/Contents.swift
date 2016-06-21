@@ -299,7 +299,7 @@ let aceRawValue = ace.rawValue
 
 
 
-struct Card {
+/*struct Card {
     var rank: Rank
     var suit: Suit
     func simpleDesc() ->String {
@@ -308,8 +308,23 @@ struct Card {
 }
 
 let threeOfSpades = Card(rank: .Three, suit: . Spades)
-let threeOfSpadesDesc = threeOfSpades.simpleDesc()
+let threeOfSpadesDesc = threeOfSpades.simpleDesc()*/
 
+
+
+
+
+protocol Personnage {
+    func seDeplacer() -> String
+}
+
+class Humain : Personnage{
+    func seDeplacer() -> String { return "Je marche" }
+}
+
+class Limace : Personnage{
+    func seDeplacer() -> String { return "Je rampe" }
+}
 
 
 
