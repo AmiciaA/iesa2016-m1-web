@@ -331,10 +331,19 @@ class Limace : Personnage{
 
 
 
+class Book {
+    var titre: String = ""
+    var auteur: String = ""
+    
+    private func getDesc() -> String {return "Le titre est \(titre), l'auteur est \(auteur)"}
+    
+}
 
+var livre = Book()
+livre.titre = "Le labyrinthe"
+livre.auteur = "Charly"
 
-
-
+livre.getDesc()
 
 
 
